@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Castelo Ads — Agência de tráfego pago para tatuadores</title>
+  <meta name="description" content="Marketing para tatuadores e estúdios de tatuagem: gestão de tráfego pago para atrair clientes qualificados, no Brasil e no exterior.">
+  <meta property="og:title" content="Castelo Ads — Marketing para tatuadores e estúdios">
+  <meta property="og:description" content="Estratégia de tráfego pago para tatuadores atraírem clientes qualificados e crescerem com previsibilidade.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.png">
+  <link rel="preload" href="fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="img/hero-team-v2.webp" as="image">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Ícones (Lucide, licença ISC) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-trending-down" viewBox="0 0 24 24"><polyline points="22 17 13.5 8.5 8.5 13.5 2 7"/><polyline points="16 17 22 17 22 11"/></symbol>
+  <symbol id="i-gem" viewBox="0 0 24 24"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></symbol>
+  <symbol id="i-megaphone" viewBox="0 0 24 24"><path d="m3 11 18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></symbol>
+  <symbol id="i-file-x" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="m14.5 12.5-5 5"/><path d="m9.5 12.5 5 5"/></symbol>
+  <symbol id="i-rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+  <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+  <symbol id="i-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></symbol>
+  <symbol id="i-volume" viewBox="0 0 24 24"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><polygon points="6 3 20 12 6 21 6 3"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><rect x="14" y="4" width="4" height="16" rx="1"/><rect x="6" y="4" width="4" height="16" rx="1"/></symbol>
+</svg>
+
+<header class="site-header">
+  <div class="container">
+    <a href="#" class="logo" data-i18n-attr="aria-label:logo.home" aria-label="Castelo Ads — início"><img src="img/logo-castelo.webp" alt="Castelo Ads" width="2000" height="582"></a>
+    <nav class="site-nav" data-i18n-attr="aria-label:nav.label" aria-label="Seções">
+      <a href="#sobre" data-i18n="nav.about">Sobre</a>
+      <a href="#servicos" data-i18n="nav.problems">Problemas</a>
+      <a href="#depoimentos" data-i18n="nav.testimonials">Depoimentos</a>
+      <a href="#resultados" data-i18n="nav.results">Resultados</a>
+      <a href="#atuacao" data-i18n="nav.reach">Atuação</a>
+      <a href="#faq" data-i18n="nav.faq">Dúvidas</a>
+      <a href="#contato" data-i18n="nav.contact">Contato</a>
+    </nav>
+    <!-- Seletor de idioma: o site troca de idioma na hora, sem sair da página -->
+    <div class="lang-switch" role="group" data-i18n-attr="aria-label:lang.label" aria-label="Idioma">
+      <button type="button" class="lang-btn" data-lang="pt" lang="pt-BR" title="Português" aria-pressed="true"><img src="flags/br-40.png" alt="" width="20" height="14">BR</button>
+      <button type="button" class="lang-btn" data-lang="en" lang="en" title="English" aria-pressed="false"><img src="flags/us-40.png" alt="" width="20" height="14">EN</button>
+      <button type="button" class="lang-btn" data-lang="es" lang="es" title="Español" aria-pressed="false"><img src="flags/es-40.png" alt="" width="20" height="14">ES</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-layers" aria-hidden="true">
+      <img class="hero-bg" src="img/hero-bg.webp" alt="" width="1920" height="1088" fetchpriority="high" decoding="async">
+      <div class="hero-beam"></div>
+      <div class="hero-glow"></div>
+      <div class="hero-fog"></div>
+    </div>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="hero-in hero-eyebrow" style="animation-delay:.1s" data-i18n="hero.eyebrow">Tatuador de Elite</p>
+        <h1 id="hero-title" class="hero-title">
+          <span class="hero-in hero-white" style="animation-delay:.3s" data-i18n="hero.line1">Marketing para</span>
+          <span class="hero-in hero-gold" style="animation-delay:.5s" data-i18n="hero.line2">Tatuadores</span>
+        </h1>
+        <span class="hero-in hero-stroke" style="animation-delay:.7s" aria-hidden="true"></span>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-halo" aria-hidden="true"></div>
+        <img class="hero-in hero-photo" style="animation-delay:.6s" src="img/hero-team-v2.webp" width="1010" height="692" fetchpriority="high" decoding="async"
+             data-i18n-attr="alt:hero.photoAlt" alt="Equipe Castelo Ads — duas pessoas e, ao centro, um homem segurando um troféu dourado em evento de tatuagem">
+      </div>
+    </div>
+    <div class="hero-fade" aria-hidden="true"></div>
+  </section>
+
+  <!-- ATUAÇÃO -->
+  <section id="atuacao" class="bg-card">
+    <div class="container atuacao-grid">
+      <div class="atuacao-text">
+        <p class="eyebrow" data-i18n="reach.eyebrow">Atuação</p>
+        <h2 class="title" data-i18n="reach.title">Do Brasil para o mundo.</h2>
+        <p class="lead" data-i18n="reach.text">Atendemos tatuadores e estúdios no Brasil e no exterior, adaptando cada campanha ao público e à região de quem você quer alcançar.</p>
+      </div>
+      <div class="atuacao-globe">
+        <div class="globe" id="globe" role="img" data-i18n-attr="aria-label:reach.globe" aria-label="Globo terrestre girando, representando a atuação no Brasil e no exterior">
+          <div class="globe-track"><div class="globe-tile"></div><div class="globe-tile"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAÍSES + NÚMEROS -->
+  <div class="countries" data-i18n-attr="aria-label:countries.label" aria-label="Países em que atuamos">
+    <div class="marquee" id="marquee"><!-- preenchido por js/main.js --></div>
+    <div class="stats">
+      <div><strong class="text-copper-gradient">+10</strong><p data-i18n="stats.1">países em que trabalhamos hoje</p></div>
+      <div><strong class="text-copper-gradient">200+</strong><p data-i18n="stats.2">artistas atendidos</p></div>
+      <div><strong class="text-copper-gradient" data-i18n="stats.3value">4 anos</strong><p data-i18n="stats.3">no mercado da tatuagem</p></div>
+    </div>
+  </div>
+
+  <!-- DEPOIMENTOS EM VÍDEO -->
+  <section id="depoimentos" class="section">
+    <div class="container">
+      <p class="eyebrow" data-i18n="testi.eyebrow">Depoimentos</p>
+      <h2 class="title" data-i18n="testi.title">Quem vive isso, conta.</h2>
+      <p class="lead lead--sm" data-i18n="testi.text">Tatuadores e estúdios que trabalham com a Castelo Ads contam, em vídeo, como os anúncios mudaram a agenda.</p>
+      <div class="carousel" id="videos-carousel">
+        <div class="carousel-viewport"><div class="carousel-track" id="videos-track"></div></div>
+        <button type="button" class="carousel-btn carousel-btn--copper carousel-btn--prev" data-i18n-attr="aria-label:carousel.prev" aria-label="Anterior"><svg class="icon"><use href="#i-arrow-left"/></svg></button>
+        <button type="button" class="carousel-btn carousel-btn--copper carousel-btn--next" data-i18n-attr="aria-label:carousel.next" aria-label="Próximo"><svg class="icon"><use href="#i-arrow-right"/></svg></button>
+      </div>
+    </div>
+  </section>
+  <div class="container after-videos">
+    <a href="#contato" class="btn-copper" data-cta="after_testimonials"><span data-i18n="cta.assess">Solicitar minha avaliação estratégica</span> <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+  </div>
+
+  <!-- PROBLEMAS -->
+  <section id="servicos" class="section bg-card" aria-labelledby="problemas-title">
+    <div class="container">
+      <p class="eyebrow" data-i18n="problems.eyebrow">Os problemas que resolvemos</p>
+      <h2 id="problemas-title" class="title" data-i18n="problems.title">Seu trabalho evoluiu. Seu marketing também precisa evoluir.</h2>
+      <p class="lead" data-i18n="problems.text">Estratégias para superar os desafios que impedem tatuadores e estúdios de alcançar seu próximo nível.</p>
+      <div class="problems">
+        <div class="problem"><svg class="icon" aria-hidden="true"><use href="#i-users"/></svg><h3 data-i18n="p1.t">Clientes desqualificados</h3><p data-i18n="p1.d">Atraia pessoas que valorizam sua arte e têm condições de investir no seu trabalho.</p></div>
+        <div class="problem"><svg class="icon" aria-hidden="true"><use href="#i-trending-down"/></svg><h3 data-i18n="p2.t">Faturamento instável</h3><p data-i18n="p2.d">Reduza as oscilações na agenda e busque maior previsibilidade de oportunidades.</p></div>
+        <div class="problem"><svg class="icon" aria-hidden="true"><use href="#i-gem"/></svg><h3 data-i18n="p3.t">Ticket abaixo do potencial</h3><p data-i18n="p3.d">Fortaleça seu posicionamento para atrair projetos de maior valor.</p></div>
+        <div class="problem"><svg class="icon" aria-hidden="true"><use href="#i-megaphone"/></svg><h3 data-i18n="p4.t">Anúncios sem resultado</h3><p data-i18n="p4.d">Melhore suas campanhas para gerar oportunidades mais qualificadas.</p></div>
+        <div class="problem"><svg class="icon" aria-hidden="true"><use href="#i-file-x"/></svg><h3 data-i18n="p5.t">Orçamentos que não fecham</h3><p data-i18n="p5.d">Melhore seu processo comercial e aproveite melhor os contatos recebidos.</p></div>
+        <div class="problem"><svg class="icon" aria-hidden="true"><use href="#i-rocket"/></svg><h3 data-i18n="p6.t">Dificuldade para crescer</h3><p data-i18n="p6.d">Alcance novos públicos e expanda suas oportunidades no Brasil e no exterior.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARA QUEM -->
+  <section id="para-quem" class="section" aria-labelledby="para-quem-title">
+    <div class="container">
+      <p class="eyebrow" data-i18n="aud.eyebrow">Para quem é a Castelo Ads</p>
+      <h2 id="para-quem-title" class="title" data-i18n="aud.title">Para tatuadores que querem ir além.</h2>
+      <p class="lead" data-i18n="aud.text">Se você leva sua carreira a sério e busca crescimento consistente, a Castelo Ads pode ser a parceira ideal.</p>
+      <div class="audience">
+        <div class="audience-card audience-card--yes">
+          <h3 data-i18n="aud.yes">É para você que:</h3>
+          <ul>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="aud.yes1">Quer atrair clientes mais qualificados e aumentar seu ticket.</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="aud.yes2">Busca maior previsibilidade na agenda e no faturamento.</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="aud.yes3">Já possui clientes, mas quer alcançar um novo nível.</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="aud.yes4">Deseja crescer com uma estratégia profissional de marketing.</span></li>
+          </ul>
+        </div>
+        <div class="audience-card audience-card--no">
+          <h3 data-i18n="aud.no">Não é para quem:</h3>
+          <ul>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-x"/></svg><span data-i18n="aud.no1">Espera resultados imediatos ou milagrosos.</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-x"/></svg><span data-i18n="aud.no2">Não está disposto a investir em crescimento.</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-x"/></svg><span data-i18n="aud.no3">Busca apenas anúncios baratos, sem estratégia.</span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-x"/></svg><span data-i18n="aud.no4">Não quer se envolver na evolução do próprio negócio.</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="cta-row">
+        <a href="#contato" class="btn-copper" data-cta="audience"><span data-i18n="cta.assess">Solicitar minha avaliação estratégica</span> <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTADOS (PRINTS) -->
+  <section id="resultados" class="section bg-card">
+    <div class="container">
+      <p class="eyebrow" data-i18n="results.eyebrow">Resultados</p>
+      <h2 class="title" data-i18n="results.title">Resultados Recentes</h2>
+      <p class="lead lead--sm" data-i18n="results.text">Prints reais dos grupos de acompanhamento, como os clientes relatam as vendas e agendamentos vindos dos anúncios.</p>
+      <div class="carousel" id="prints-carousel">
+        <div class="carousel-viewport"><div class="carousel-track" id="prints-track"></div></div>
+        <button type="button" class="carousel-btn carousel-btn--hide-mobile carousel-btn--prev" data-i18n-attr="aria-label:carousel.prev" aria-label="Anterior"><svg class="icon"><use href="#i-arrow-left"/></svg></button>
+        <button type="button" class="carousel-btn carousel-btn--hide-mobile carousel-btn--next" data-i18n-attr="aria-label:carousel.next" aria-label="Próximo"><svg class="icon"><use href="#i-arrow-right"/></svg></button>
+      </div>
+      <div class="dots" id="prints-dots"></div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="section sobre">
+    <div class="container">
+      <h2 class="title" data-i18n="about.title">Quem é a Castelo Ads?</h2>
+      <img src="img/team-group-opt.webp" width="1080" height="1350" loading="lazy" data-i18n-attr="alt:about.alt" alt="Equipe Castelo Ads reunida com tatuadores no estande Tatuador de Elite">
+      <p data-i18n="about.text">A Castelo Ads é uma agência dedicada a tatuadores e estúdios de tatuagem. Entendemos a linguagem, o público e o ritmo desse mercado — e usamos isso para criar campanhas com mais critério.</p>
+    </div>
+  </section>
+
+  <!-- CONTATO / FORMULÁRIO -->
+  <section id="contato" class="section bg-card contato">
+    <div class="container">
+      <p class="eyebrow" data-i18n="contact.eyebrow">Contato</p>
+      <h2 class="title" data-i18n="contact.title">Solicite sua avaliação estratégica</h2>
+      <p class="lead lead--sm" data-i18n="contact.text">Conte um pouco sobre seu negócio para entendermos como podemos ajudar você a crescer.</p>
+
+      <form class="lead-form" id="lead-form" novalidate>
+        <label class="field" data-field="nome">
+          <span class="label" data-i18n="f.name">Nome</span>
+          <input class="input" id="f-nome" name="nome" autocomplete="name" maxlength="100">
+        </label>
+
+        <div class="field" data-field="telefone">
+          <label class="label" for="f-telefone" data-i18n="f.phone">Telefone (WhatsApp)</label>
+          <div class="phone-row">
+            <input type="hidden" name="ddi" id="f-ddi" value="+55">
+            <div class="ddi">
+              <button type="button" class="ddi-btn" id="ddi-btn" aria-haspopup="listbox" aria-expanded="false" aria-label="+55 — código do país">
+                <img id="ddi-flag" src="flags/br-40.png" alt=""><span id="ddi-code">+55</span>
+              </button>
+              <ul class="ddi-list" id="ddi-list" role="listbox" hidden></ul>
+            </div>
+            <input class="input" id="f-telefone" name="telefone" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="(99) 99999-9999">
+          </div>
+        </div>
+
+        <label class="field" data-field="localizacao">
+          <span class="label" data-i18n="f.location">Localização (cidade / país)</span>
+          <input class="input" id="f-localizacao" name="localizacao" maxlength="100">
+        </label>
+
+        <label class="field" data-field="instagram">
+          <span class="label" data-i18n="f.instagram">Instagram (@)</span>
+          <input class="input" id="f-instagram" name="instagram" data-i18n-attr="placeholder:f.instagramPh" placeholder="@seuestudio" maxlength="60">
+        </label>
+
+        <label class="field span-2" data-field="faturamento">
+          <span class="label" data-i18n="f.revenue">Faturamento mensal</span>
+          <!-- O "value" de cada opção fica sempre em português: é o que chega no Make -->
+          <select class="input" id="f-faturamento" name="faturamento">
+            <option value="" disabled selected data-i18n="f.select">Selecione</option>
+            <option value="Até R$ 3 mil/mês" data-i18n="rev1">Até R$ 3 mil/mês</option>
+            <option value="R$ 3 a 6 mil/mês" data-i18n="rev2">R$ 3 a 6 mil/mês</option>
+            <option value="R$ 6 a 10 mil/mês" data-i18n="rev3">R$ 6 a 10 mil/mês</option>
+            <option value="R$ 10 a 20 mil/mês" data-i18n="rev4">R$ 10 a 20 mil/mês</option>
+            <option value="R$ 20 a 30 mil/mês" data-i18n="rev5">R$ 20 a 30 mil/mês</option>
+            <option value="R$ 30 a 40 mil/mês" data-i18n="rev6">R$ 30 a 40 mil/mês</option>
+            <option value="Acima de R$ 40 mil/mês" data-i18n="rev7">Acima de R$ 40 mil/mês</option>
+          </select>
+        </label>
+
+        <label class="field span-2" data-field="problema">
+          <span class="label" data-i18n="f.challenge">Qual é seu maior desafio para crescer atualmente?</span>
+          <textarea class="input" id="f-problema" name="problema" rows="4" maxlength="600" data-i18n-attr="placeholder:f.challengePh" placeholder="Ex.: quero atrair clientes que valorizem meu trabalho e aumentar meu faturamento com mais previsibilidade."></textarea>
+        </label>
+
+        <button type="submit" class="btn-whatsapp span-2" data-i18n="f.submit">AGENDAR REUNIÃO ESTRATÉGICA</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section bg-card faq" aria-labelledby="faq-title">
+    <div class="container">
+      <h2 id="faq-title" class="title" data-i18n="faq.title">Perguntas frequentes</h2>
+      <p class="lead" data-i18n="faq.text">Entenda como a Castelo Ads trabalha para desenvolver estratégias de marketing e crescimento para tatuadores e estúdios.</p>
+      <div class="faq-list">
+        <details class="faq-item"><summary><h3 data-i18n="q1">O que diferencia a Castelo Ads de outras agências de tráfego pago para tatuadores?</h3><svg class="icon" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary><p data-i18n="a1">Somos uma agência especializada no mercado da tatuagem, com experiência em projetos no Brasil e no exterior. Nossa metodologia vai além dos anúncios: integramos posicionamento, estratégias comerciais, aquisição de clientes e acompanhamento de resultados para desenvolver estratégias alinhadas à realidade de cada artista.</p></details>
+        <details class="faq-item"><summary><h3 data-i18n="q2">Já invisto em tráfego pago e trabalho com outra agência. Por que considerar a Castelo Ads?</h3><svg class="icon" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary><p data-i18n="a2">Nem sempre o problema está no investimento, mas na estratégia. Avaliamos suas campanhas, posicionamento, público e processo comercial para identificar oportunidades de melhoria. Nosso objetivo não é simplesmente gerar mais contatos, mas buscar oportunidades mais qualificadas e resultados comerciais consistentes.</p></details>
+        <details class="faq-item"><summary><h3 data-i18n="q3">Como a Castelo Ads trabalha para atrair clientes de maior poder aquisitivo?</h3><svg class="icon" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary><p data-i18n="a3">Desenvolvemos estratégias de segmentação, comunicação e posicionamento considerando seu estilo artístico, ticket médio e região de atuação. O objetivo é alcançar pessoas com maior potencial de investimento e que valorizem a qualidade do seu trabalho.</p></details>
+        <details class="faq-item"><summary><h3 data-i18n="q4">Como vocês acompanham os resultados e o retorno dos investimentos em anúncios?</h3><svg class="icon" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary><p data-i18n="a4">Nosso acompanhamento vai além de curtidas, alcance e quantidade de leads. Analisamos indicadores como custo por contato, qualidade das oportunidades, agendamentos e fechamentos, utilizando também os feedbacks comerciais do cliente. Assim, conseguimos tomar decisões baseadas em dados e otimizar continuamente as campanhas.</p></details>
+        <details class="faq-item"><summary><h3 data-i18n="q5">A Castelo Ads também ajuda a melhorar as vendas e a conversão dos orçamentos?</h3><svg class="icon" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary><p data-i18n="a5">Sim. Entendemos que gerar contatos não é suficiente quando eles não se transformam em clientes. Por isso, nossa metodologia contempla orientações de atendimento, posicionamento e estratégias comerciais para melhorar a percepção de valor e o aproveitamento das oportunidades, conforme o serviço contratado.</p></details>
+        <details class="faq-item"><summary><h3 data-i18n="q6">A Castelo Ads assume todo o marketing e o atendimento do meu estúdio?</h3><svg class="icon" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary><p data-i18n="a6">Nossa equipe é responsável pelo planejamento, gestão e otimização das campanhas de tráfego pago, conforme o plano contratado. Também oferecemos direcionamentos de posicionamento, conteúdo e vendas. As publicações orgânicas e o atendimento aos interessados não são automaticamente assumidos pela agência.</p></details>
+        <details class="faq-item"><summary><h3 data-i18n="q7">Em quanto tempo as campanhas começam a rodar e quando posso esperar resultados?</h3><svg class="icon" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary><p data-i18n="a7">Após a contratação, realizamos o alinhamento estratégico, a análise do projeto e a preparação das campanhas. Nosso prazo de ativação é de até 10 dias úteis, dependendo da entrega dos acessos e materiais necessários. Os resultados são acompanhados e otimizados continuamente, sem promessas de faturamento ou retorno garantido.</p></details>
+        <details class="faq-item"><summary><h3 data-i18n="q8">Quanto custa contratar a Castelo Ads para fazer a gestão de tráfego pago?</h3><svg class="icon" aria-hidden="true"><use href="#i-chevron-down"/></svg></summary><p data-i18n="a8">O investimento depende do momento do seu negócio, dos objetivos, da localização e da estrutura necessária para o projeto. Por isso, realizamos uma avaliação estratégica antes de apresentar uma proposta, recomendando uma solução adequada ao seu cenário.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="section cta-premium" aria-labelledby="cta-title">
+    <div class="container">
+      <p class="cta-in eyebrow" data-i18n="final.eyebrow">O próximo nível da sua carreira</p>
+      <h2 id="cta-title" class="cta-in title" style="animation-delay:.1s" data-i18n-html="final.title">Sua arte já tem valor. Seu marketing precisa estar <em class="text-copper-gradient">à altura</em>.</h2>
+      <p class="cta-in lead" style="animation-delay:.2s" data-i18n="final.text">Descubra como uma estratégia especializada pode ajudar você a atrair clientes mais qualificados, valorizar seu trabalho e crescer com maior previsibilidade.</p>
+      <div class="cta-in cta-btn" style="animation-delay:.3s">
+        <a href="#contato" class="btn-copper" data-cta="cta_premium"><span data-i18n="cta.assess">Solicitar minha avaliação estratégica</span> <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+      </div>
+      <p class="note" data-i18n="final.note">Conte sobre seu momento atual e converse com nossa equipe.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <img src="img/logo-castelo-emblema.png" alt="Castelo Ads">
+    <span>© <span id="year">2026</span> <span data-i18n="footer.rights">Castelo Ads. Todos os direitos reservados.</span></span>
+    <a href="#" id="footer-instagram" target="_blank" rel="noopener noreferrer" hidden>Instagram</a>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
