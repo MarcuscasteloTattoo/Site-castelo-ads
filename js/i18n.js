@@ -116,8 +116,8 @@ const I18N = {
     prints: [
       "Print de WhatsApp com vendas fechadas pela campanha — Fernanda Miranda Tattoo",
       "Print de WhatsApp com cinco vendas na semana — Emerson Bastos Tatuador",
-      "Print de WhatsApp com duas vendas na semana — Imaj Tatu",
-      "Print de WhatsApp com trabalho fechado e pagamento de sinal — Imaj Tatu",
+      "Print de WhatsApp com duas vendas na semana — Imad Tattoo",
+      "Print de WhatsApp com trabalho fechado e pagamento de sinal — Imad Tattoo",
       "Print de WhatsApp com cinco vendas na semana — Fabrícia Tattoo (EUA)",
       "Print de WhatsApp com três vendas na semana — Fabrícia Tattoo (EUA)",
       "Print de WhatsApp com vendas e remarketing — Thiago Valsechi",
@@ -246,8 +246,8 @@ const I18N = {
     prints: [
       "WhatsApp screenshot showing sales closed through the campaign — Fernanda Miranda Tattoo",
       "WhatsApp screenshot showing five sales in one week — Emerson Bastos Tattoo Artist",
-      "WhatsApp screenshot showing two sales in one week — Imaj Tatu",
-      "WhatsApp screenshot showing a booked job and deposit paid — Imaj Tatu",
+      "WhatsApp screenshot showing two sales in one week — Imad Tattoo",
+      "WhatsApp screenshot showing a booked job and deposit paid — Imad Tattoo",
       "WhatsApp screenshot showing five sales in one week — Fabrícia Tattoo (USA)",
       "WhatsApp screenshot showing three sales in one week — Fabrícia Tattoo (USA)",
       "WhatsApp screenshot showing sales and remarketing — Thiago Valsechi",
@@ -376,8 +376,8 @@ const I18N = {
     prints: [
       "Captura de WhatsApp con ventas cerradas por la campaña — Fernanda Miranda Tattoo",
       "Captura de WhatsApp con cinco ventas en la semana — Emerson Bastos Tatuador",
-      "Captura de WhatsApp con dos ventas en la semana — Imaj Tatu",
-      "Captura de WhatsApp con trabajo cerrado y pago de seña — Imaj Tatu",
+      "Captura de WhatsApp con dos ventas en la semana — Imad Tattoo",
+      "Captura de WhatsApp con trabajo cerrado y pago de seña — Imad Tattoo",
       "Captura de WhatsApp con cinco ventas en la semana — Fabrícia Tattoo (EE. UU.)",
       "Captura de WhatsApp con tres ventas en la semana — Fabrícia Tattoo (EE. UU.)",
       "Captura de WhatsApp con ventas y remarketing — Thiago Valsechi",

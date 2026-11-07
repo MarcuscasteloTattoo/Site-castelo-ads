@@ -38,7 +38,7 @@ const VIDEOS = [
 /* Prints de resultados: [arquivo em img/, nome exibido, bandeira] — descrições em js/i18n.js (lista "prints") */
 const PRINTS = [
   ["depoimento-01", "Fernanda Miranda", "br"], ["depoimento-02", "Emerson Bastos", "br"],
-  ["depoimento-03", "Imaj Tatu", "br"], ["depoimento-04", "Imaj Tatu", "br"],
+  ["depoimento-03", "Imad Tattoo", "br"], ["depoimento-04", "Imad Tattoo", "br"],
   ["depoimento-05", "Fabrícia", "us"], ["depoimento-06", "Fabrícia", "us"],
   ["depoimento-07", "Thiago Valsechi", "br"], ["depoimento-08", "Tatiana", "br"],
   ["depoimento-09", "Gabriel Moreira", "br"], ["depoimento-10", "Letícia", "pt"],
