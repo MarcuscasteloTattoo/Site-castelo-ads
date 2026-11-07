@@ -43,3 +43,8 @@ Para testar no computador: `npx serve` dentro da pasta e abra o endereço mostra
 - A faixa de faturamento chega sempre em português, em qualquer idioma.
 - O campo `idioma` (`pt`, `en` ou `es`) mostra qual versão a pessoa usou.
 - A mensagem do WhatsApp sai no idioma escolhido pelo visitante.
+
+## Depois de editar CSS ou JS
+
+No `index.html`, os arquivos `css/style.css`, `js/i18n.js` e `js/main.js` têm um número de versão (`?v=...`).
+Sempre que alterar um desses arquivos, mude esse número (ex.: `?v=20261107-3`) para que os visitantes recebam a versão nova na hora, em vez da cópia guardada no navegador.
