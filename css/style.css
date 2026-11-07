@@ -110,11 +110,16 @@ ul { list-style: none; }
   -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
 }
 .site-header .container { display: flex; align-items: center; justify-content: space-between; padding-block: 1rem; }
-.site-header .logo img { height: 2rem; width: auto; }
-.site-nav { display: none; gap: 2rem; font-size: .875rem; color: var(--muted-foreground); }
+.site-header .logo { flex-shrink: 0; }
+.site-header .logo img { height: 2.25rem; width: auto; }
+.site-nav { display: none; gap: 1.75rem; font-size: .875rem; color: var(--muted-foreground); }
+.site-nav a { padding-block: .45rem; white-space: nowrap; }
 .site-nav a:hover { color: var(--foreground); }
 @media (min-width: 768px) {
-  .site-header .logo img { height: 2.25rem; }
+  .site-header .logo img { height: 2.6rem; }
+}
+/* O menu completo só aparece quando cabe junto com o logo e os botões de idioma */
+@media (min-width: 1100px) {
   .site-nav { display: flex; }
 }
 
@@ -124,7 +129,7 @@ ul { list-style: none; }
 .lang-switch { display: flex; gap: .5rem; flex-shrink: 0; }
 .lang-btn {
   display: inline-flex; align-items: center; gap: .4rem;
-  padding: .35rem .7rem; border: 1px solid var(--border); border-radius: 999px;
+  padding: .45rem .75rem; border: 1px solid var(--border); border-radius: 999px;
   font-size: .75rem; font-weight: 600; letter-spacing: .08em; color: var(--foreground);
   transition: border-color .2s, background .2s;
 }
@@ -385,5 +390,21 @@ textarea.input { resize: vertical; min-height: 7rem; }
   .lang-switch { gap: .3rem; }
   .lang-btn { padding: .3rem .45rem; gap: .3rem; font-size: .7rem; letter-spacing: .04em; }
   .lang-btn img { width: 1.1rem; height: .78rem; }
+  .site-header .logo img { height: 2rem; }
+}
+
+/* ---------- Ajustes de responsividade ---------- */
+/* Rótulos pequenos nunca ficam abaixo de 11.5px (entre 1024 e 1535px a base da página é menor) */
+.eyebrow, .stats p, .video-caption .place, .print-caption, .sound-badge small { font-size: max(.75rem, 11.5px); }
+@media (min-width: 421px) { .lang-btn { font-size: max(.75rem, 11.5px); } }
+.country span { font-size: max(.875rem, 12px); }
+/* Celulares bem estreitos (até 360px): campo de telefone com mais espaço */
+@media (max-width: 360px) {
+  .site-header .container { gap: .6rem; }
   .site-header .logo img { height: 1.75rem; }
+  .lang-switch { gap: .25rem; }
+  .lang-btn { padding: .3rem .4rem; gap: .25rem; }
+  .ddi { width: 5.9rem; }
+  .ddi-btn { gap: .35rem; padding-inline: .5rem .35rem; }
+  .phone-row .input { padding-inline: .75rem; }
 }
