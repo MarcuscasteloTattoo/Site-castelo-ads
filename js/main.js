@@ -154,7 +154,7 @@ function track(event, source) {
   [...COUNTRIES, ...COUNTRIES].forEach((code, i) => {
     const dup = i >= COUNTRIES.length;
     const item = el("div", { class: "country" });
-    item.innerHTML = `<img src="flags/${code}-160.png" alt="" ${dup ? 'aria-hidden="true"' : ""} loading="lazy"><span data-code="${code}"></span>`;
+    item.innerHTML = `<img src="flags/${code}-160.png" alt="" width="64" height="64" ${dup ? 'aria-hidden="true"' : ""} loading="lazy"><span data-code="${code}"></span>`;
     if (dup) item.setAttribute("aria-hidden", "true");
     m.appendChild(item);
   });
@@ -220,7 +220,9 @@ function makeCarousel(root, { loop = false, autoplay = 0, onSelect } = {}) {
   viewport.addEventListener("pointerdown", restart);
 
   restart();
-  requestAnimationFrame(update);
+  // Primeira medição só depois que a página carregou (evita "reflow forçado" no carregamento)
+  if (document.readyState === "complete") requestAnimationFrame(update);
+  else window.addEventListener("load", () => requestAnimationFrame(update), { once: true });
   return { goTo: (i) => { goTo(i); restart(); } };
 }
 
@@ -248,7 +250,7 @@ function makeCarousel(root, { loop = false, autoplay = 0, onSelect } = {}) {
       <figure class="card-figure" data-video="${i}">
         ${media}
         <figcaption class="video-caption">
-          <img class="flag-sm" src="flags/${v.countryCode}-80.png" alt="" loading="lazy">
+          <img class="flag-sm" src="flags/${v.countryCode}-80.png" alt="" width="36" height="24" loading="lazy">
           <span class="place"></span>
           <span class="name">${v.name}</span>
         </figcaption>
@@ -330,9 +332,9 @@ function makeCarousel(root, { loop = false, autoplay = 0, onSelect } = {}) {
     const slide = el("div", { class: "carousel-slide print-slide" });
     slide.innerHTML = `
       <figure class="card-figure" data-print="${i}">
-        <div class="print-img"><img src="img/${file}.webp" alt="" loading="lazy"></div>
+        <div class="print-img"><img src="img/${file}-720.webp" srcset="img/${file}-720.webp 720w, img/${file}.webp 1100w" sizes="(min-width: 1024px) 340px, (min-width: 640px) 50vw, calc(100vw - 2.5rem)" alt="" width="720" height="1056" loading="lazy" decoding="async"></div>
         <figcaption class="print-caption">
-          <img class="flag-sm" src="flags/${code}-40.png" alt="" loading="lazy">
+          <img class="flag-sm" src="flags/${code}-40.png" alt="" width="36" height="24" loading="lazy">
           <span>${label}</span>
         </figcaption>
       </figure>`;
@@ -389,7 +391,7 @@ $$("[data-cta]").forEach((a) => a.addEventListener("click", () => track("cta_for
   // Lista de países
   PHONE_COUNTRIES.forEach((c) => {
     const li = el("li");
-    const b = el("button", { type: "button", role: "option", "data-code": c[0] }, `<img src="flags/${c[0]}-40.png" alt="">${c[1]}`);
+    const b = el("button", { type: "button", role: "option", "data-code": c[0] }, `<img src="flags/${c[0]}-40.png" alt="" width="24" height="16" loading="lazy">${c[1]}`);
     b.addEventListener("mousedown", (e) => { e.preventDefault(); choose(c); });
     b.addEventListener("click", () => choose(c)); // teclado
     li.appendChild(b);

@@ -11,7 +11,9 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="favicon.png">
   <link rel="preload" href="fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="img/hero-team-v2.webp" as="image">
+  <link rel="preload" href="fonts/montserrat-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/manrope-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="img/hero-team-v2.webp" imagesrcset="img/hero-team-v2-640.webp 640w, img/hero-team-v2.webp 1010w" imagesizes="(min-width: 1024px) 640px, (min-width: 640px) 520px, 138vw">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -60,24 +62,26 @@
   <!-- HERO -->
   <section class="hero" aria-labelledby="hero-title">
     <div class="hero-layers" aria-hidden="true">
-      <img class="hero-bg" src="img/hero-bg.webp" alt="" width="1920" height="1088" fetchpriority="high" decoding="async">
+      <img class="hero-bg" src="img/hero-bg.webp" srcset="img/hero-bg-960.webp 960w, img/hero-bg.webp 1920w" sizes="100vw" alt="" width="1920" height="1088" decoding="async">
       <div class="hero-beam"></div>
       <div class="hero-glow"></div>
       <div class="hero-fog"></div>
     </div>
     <div class="hero-grid">
       <div class="hero-copy">
-        <p class="hero-in hero-eyebrow" style="animation-delay:.1s" data-i18n="hero.eyebrow">Tatuador de Elite</p>
+        <p class="hero-in hero-eyebrow" data-i18n="hero.eyebrow">Tatuador de Elite</p>
         <h1 id="hero-title" class="hero-title">
-          <span class="hero-in hero-white" style="animation-delay:.3s" data-i18n="hero.line1">Marketing para</span>
-          <span class="hero-in hero-gold" style="animation-delay:.5s" data-i18n="hero.line2">Tatuadores</span>
+          <span class="hero-in hero-white" style="animation-delay:.1s" data-i18n="hero.line1">Marketing para</span>
+          <span class="hero-in" style="animation-delay:.2s"><span class="hero-gold" data-i18n="hero.line2">Tatuadores</span></span>
         </h1>
-        <span class="hero-in hero-stroke" style="animation-delay:.7s" aria-hidden="true"></span>
+        <span class="hero-in hero-stroke" style="animation-delay:.35s" aria-hidden="true"></span>
       </div>
       <div class="hero-visual">
         <div class="hero-halo" aria-hidden="true"></div>
-        <img class="hero-in hero-photo" style="animation-delay:.6s" src="img/hero-team-v2.webp" width="1010" height="692" fetchpriority="high" decoding="async"
-             data-i18n-attr="alt:hero.photoAlt" alt="Equipe Castelo Ads — duas pessoas e, ao centro, um homem segurando um troféu dourado em evento de tatuagem">
+        <div class="hero-in hero-photo-wrap" style="animation-delay:.2s">
+          <img class="hero-photo" src="img/hero-team-v2.webp" srcset="img/hero-team-v2-640.webp 640w, img/hero-team-v2.webp 1010w" sizes="(min-width: 1024px) 640px, (min-width: 640px) 520px, 138vw" width="1010" height="692" fetchpriority="high"
+               data-i18n-attr="alt:hero.photoAlt" alt="Equipe Castelo Ads — duas pessoas e, ao centro, um homem segurando um troféu dourado em evento de tatuagem">
+        </div>
       </div>
     </div>
     <div class="hero-fade" aria-hidden="true"></div>
@@ -194,7 +198,7 @@
   <section id="sobre" class="section sobre">
     <div class="container">
       <h2 class="title" data-i18n="about.title">Quem é a Castelo Ads?</h2>
-      <img src="img/team-group-opt.webp" width="1080" height="1350" loading="lazy" data-i18n-attr="alt:about.alt" alt="Equipe Castelo Ads reunida com tatuadores no estande Tatuador de Elite">
+      <img src="img/team-group-opt.webp" srcset="img/team-group-720.webp 720w, img/team-group-opt.webp 1080w" sizes="(min-width: 640px) 512px, calc(100vw - 2.5rem)" width="1080" height="1350" loading="lazy" decoding="async" data-i18n-attr="alt:about.alt" alt="Equipe Castelo Ads reunida com tatuadores no estande Tatuador de Elite">
       <p data-i18n="about.text">A Castelo Ads é uma agência dedicada a tatuadores e estúdios de tatuagem. Entendemos a linguagem, o público e o ritmo desse mercado — e usamos isso para criar campanhas com mais critério.</p>
     </div>
   </section>
@@ -218,7 +222,7 @@
             <input type="hidden" name="ddi" id="f-ddi" value="+55">
             <div class="ddi">
               <button type="button" class="ddi-btn" id="ddi-btn" aria-haspopup="listbox" aria-expanded="false" aria-label="+55 — código do país">
-                <img id="ddi-flag" src="flags/br-40.png" alt=""><span id="ddi-code">+55</span>
+                <img id="ddi-flag" src="flags/br-40.png" alt="" width="24" height="16"><span id="ddi-code">+55</span>
               </button>
               <ul class="ddi-list" id="ddi-list" role="listbox" hidden></ul>
             </div>
@@ -295,7 +299,7 @@
 
 <footer class="site-footer">
   <div class="container">
-    <img src="img/logo-castelo-emblema.png" alt="Castelo Ads">
+    <img src="img/logo-castelo-emblema.png" alt="Castelo Ads" width="420" height="156" loading="lazy">
     <span>© <span id="year">2026</span> <span data-i18n="footer.rights">Castelo Ads. Todos os direitos reservados.</span></span>
     <a href="#" id="footer-instagram" target="_blank" rel="noopener noreferrer" hidden>Instagram</a>
   </div>
