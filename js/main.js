@@ -473,6 +473,7 @@ $$("[data-cta]").forEach((a) => a.addEventListener("click", () => track("cta_for
   }
   visitInfo(); // registra a página de entrada assim que o site abre
 
+  let leadTracked = false;
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     const data = Object.fromEntries(new FormData(form));
@@ -509,6 +510,19 @@ $$("[data-cta]").forEach((a) => a.addEventListener("click", () => track("cta_for
       headers: { "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8" },
       body: body.toString(),
     }).catch(() => {});
+
+    // Conversão: cadastro finalizado (formulário válido e enviado) -> evento "Lead" no Meta Pixel
+    // e "generate_lead" no Google Tag Manager. Conta só uma vez por visita, mesmo com clique duplo.
+    if (!leadTracked) {
+      leadTracked = true;
+      const leadId = "lead-" + now.getTime() + "-" + Math.random().toString(36).slice(2, 8);
+      window.fbq?.("track", "Lead", {
+        content_name: "Avaliação estratégica",
+        content_category: data.faturamento,
+        language: lang,
+      }, { eventID: leadId });
+      window.dataLayer?.push({ event: "generate_lead", lead_id: leadId, form: "avaliacao_estrategica", faturamento: data.faturamento, idioma: lang });
+    }
 
     // 2) Abre o WhatsApp com a mensagem pronta, no idioma escolhido
     let msg = `${t("wa.hello")}\n\n${t("wa.name")}: ${data.nome}\n${t("wa.phone")}: ${data.ddi} ${data.telefone}\n${t("wa.location")}: ${data.localizacao}\n${t("wa.revenue")}: ${revenueLabel}\nInstagram: ${instagram}`;
